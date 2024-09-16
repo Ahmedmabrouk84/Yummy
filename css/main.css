@@ -1,0 +1,96 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+
+  background-color: #000;
+}
+
+aside {
+    z-index: 9999;
+    min-height: 100vh;
+    white-space: nowrap;
+}
+.outer-side{
+  display: none;
+}
+aside .side-menu {
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+aside .side-rghit {
+  background-color: #fff;
+  z-index: 9999;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.lodding{
+  position: fixed;
+  z-index: 5555;
+  inset: 0;
+  background-color:#000;
+  display: grid;
+  place-content: center;
+}
+
+.my-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.my-card h3{
+  font-size: 28px;
+  font-weight: 600;
+}
+.my-card p{
+  font-size: 16px;
+}
+.layer {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(249, 246, 246, 0.792);
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.my-card:hover .layer {
+  transform: translateY(0);
+}
+#close-icon{
+  cursor: pointer;
+}
+
+.home .card { 
+  color: var(--color-text) !important;
+  background-color:   transparent;
+}
+.home .card-p{
+  padding: 10px;
+  color: var(--color-text);
+}
+
+.home .caption p{
+    color: var(--color-text) !important;
+    line-height: 1.7;
+}
+.lh-p{
+  line-height: 1.7 !important;
+}
+
+.cursor{
+  cursor: pointer;
+}

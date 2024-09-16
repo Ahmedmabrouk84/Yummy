@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="shortcut icon"
+      href="images/Mealify-img1.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/area.css" />
+    <title>Yummy</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  </head>
+  <body>
+    <!-- 
+    icon side bar  
+    class="text-dark fa-solid open-close-icon fa-2x fa-align-justify"-->
+
+    <div id="lodding" class="lodding d-none">
+      <p class="looder text-white">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+      </p>
+    </div>
+
+    <aside class="parant-side text-white position-fixed top-0 bottom-0 d-flex">
+      <div class="outer-side">
+        <div class="side-menu">
+          <div class="links p-3">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="search.html"
+                  >Search</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="area" href="area.html">Area</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ingredintes.html" id="ingredients">Ingredients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contect.html" id="contect"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer">
+            <div class="icons p-2">
+              <a href="#">
+                <span><i class="fa-brands fa-facebook"></i></span>
+              </a>
+              <a href="#">
+                <span><i class="fa-brands fa-twitter"></i></span>
+              </a>
+              <a href="#">
+                <span><i class="fa-solid fa-globe"></i></span>
+              </a>
+            </div>
+            <p>Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-rghit d-flex p-2 align-content-between">
+        <div class="img-logo">
+          <img src="images/Mealify-img1.png " width="50px" />
+        </div>
+        <div>
+          <span id="close-icon">
+            <i
+              class="text-dark fa-solid open-close-icon fa-2x fa-align-justify"
+            ></i>
+          </span>
+        </div>
+        <div class="icon-footer p-1">
+          <a href="#">
+            <span class="text-dark d-block"
+              ><i class="fa-solid fa-globe d-block"></i
+            ></span>
+          </a>
+          <a href="#">
+            <span class="text-dark"
+              ><i class="fa-solid fa-share-nodes"></i
+            ></span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+
+    <main class="mt-5">
+      <section id="mainSection" class=" ">
+        <div class="container">
+          <div class="row g-4" id="rowData"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/area.js"></script>
+  </body>
+</html>

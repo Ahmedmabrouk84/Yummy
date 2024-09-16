@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="shortcut icon"
+      href="images/Mealify-img1.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Yummy</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  </head>
+  <body>
+ 
+    <div id="lodding" class="lodding d-none">
+      <p class="looder text-white">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+      </p>
+    </div>
+
+    
+    <aside class="parant-side text-white position-fixed top-0 bottom-0 d-flex">
+      <div class="outer-side">
+        <div class="side-menu">
+          <div class="links p-3">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="search.html"
+                  >Search</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="area" href="area.html">Area</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ingredintes.html" id="ingredients">Ingredients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contect.html" id="contect"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer">
+            <div class="icons p-2">
+              <a href="#">
+                <span><i class="fa-brands fa-facebook"></i></span>
+              </a>
+              <a href="#">
+                <span><i class="fa-brands fa-twitter"></i></span>
+              </a>
+              <a href="#">
+                <span><i class="fa-solid fa-globe"></i></span>
+              </a>
+            </div>
+            <p>Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-rghit d-flex p-2 align-content-between">
+        <div class="img-logo">
+          <img src="images/Mealify-img1.png " width="50px" />
+        </div>
+        <div>
+          <span id="close-icon">
+            <i
+              class="text-dark fa-solid open-close-icon fa-2x fa-align-justify"
+            ></i>
+          </span>
+        </div>
+        <div class="icon-footer p-1">
+          <a href="#">
+            <span class="text-dark d-block"
+              ><i class="fa-solid fa-globe d-block"></i
+            ></span>
+          </a>
+          <a href="#">
+            <span class="text-dark"
+              ><i class="fa-solid fa-share-nodes"></i
+            ></span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+
+    <main>
+      <section>
+        <div class="contect">
+          <div class="container w-75">
+            <div class="row min-vh-100 align-content-center g-3">
+              <div class="p-4 box-inputs">
+                <form id="form" class="form">
+                  <div class="row g-4">
+                    <div class="col-6">
+                      <div class="form-data">
+                        <input
+                          type="text"
+                          id="Name"
+                          class="form-control mb-1"
+                          placeholder="Enter Your Name"
+                        />
+                        <div
+                          class="alert alert-danger mt-1 p-1 invalid-feedback"
+                        >
+                          <p class="m-0 p-1">Your Name Is Required</p>
+                          <p class="m-0 p-1">Minmum Length 2 and Maxmum 20</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-data">
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control mb-1"
+                          placeholder="Enter Your Email"
+                        />
+                        <div
+                          class="alert alert-danger mt-1 p-1 invalid-feedback"
+                        >
+                          <p class="m-0 p-1">Your Email Is Required</p>
+                          <p class="m-0 p-1">InValid Email Formate</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-data">
+                        <input
+                          type="text"
+                          id="phone"
+                          class="form-control"
+                          placeholder="Enter Your Phone"
+                        />
+                        <div
+                          class="alert alert-danger mt-1 p-1 invalid-feedback"
+                        >
+                          <p class="m-0 p-1">Your Phone Is Required</p>
+                          <p class="m-0 p-1">InValid Phone Number Formate</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-data">
+                        <input
+                          type="text"
+                          id="age"
+                          class="form-control"
+                          placeholder="Enter Your age"
+                        />
+                        <div
+                          class="alert alert-danger mt-1 p-1 invalid-feedback"
+                        >
+                          <p class="m-0 p-1">Your Age Is Required</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-data">
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control"
+                          placeholder="Enter Your Password"
+                        />
+                        <div
+                          class="alert alert-danger mt-1 p-1 invalid-feedback"
+                        >
+                          <p class="m-0 p-1">Password Is Required</p>
+                          <p class="m-0 p-1">
+                            Minimum eight characters, at least one letter and
+                            one number
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-data">
+                        <input
+                          type="password"
+                          id="Repassword"
+                          class="form-control"
+                          placeholder="Repassword"
+                        />
+                        <div
+                          class="alert alert-danger mt-1 p-1 invalid-feedback"
+                        >
+                          <p class="m-0 p-1">Repassword should as password to Open Button </p>
+                          <p class="m-0 p-1">
+                            Minimum eight characters, at least one letter and
+                            one number
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center mb-2">
+                      <button
+                        type="submit"
+                        disabled
+                        id="btnSubmit"
+                        style="width: 4 rem"
+                        class="btn btn-outline-danger"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/contect.js"></script>
+  </body>
+</html>

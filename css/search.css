@@ -1,0 +1,101 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+
+  background-color: #0D0D0D;
+}
+:root{
+  --color-text: #fff; 
+  --main-color: #000 ;
+  /* --main-color:  #0D0D0D ; */
+}
+
+aside {
+    z-index: 9999;
+    min-height: 100vh;
+    white-space: nowrap;
+}
+aside .side-menu {
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.outer-side{
+  display: none;
+}
+aside .side-rghit {
+  background-color: #fff;
+  z-index: 9999;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+#close-icon{
+  cursor: pointer;
+}
+
+::placeholder {
+  /* color: #0d0d0d !important; */
+  color: #6C757D !important;
+  font-size: 0.9375rem;
+  color: #fff;
+}
+
+input {
+  border: 1px solid #ced4da;
+  background-color: #0D0D0D !important;
+  color: var(--color-text) !important;
+}
+
+ input:focus {
+  color: var(--color-text);
+  /* background-color: var(--main-color); */
+}
+
+.lodding{
+  position: fixed;
+  z-index: 5555;
+  inset: 0;
+  background-color:#000;
+  display: grid;
+  place-content: center;
+}
+
+.my-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.my-card h3{
+  font-size: 28px;
+  font-weight: 600;
+}
+.my-card p{
+  font-size: 16px;
+}
+.layer {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(249, 246, 246, 0.792);
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.my-card:hover .layer {
+  transform: translateY(0);
+}
